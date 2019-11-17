@@ -11,6 +11,8 @@ According to
 [Wikipedia](https://en.wikipedia.org/wiki/List_of_Qualcomm_Snapdragon_systems-on-chip#Snapdragon_632,_670_and_675_%282018%29),
 these are "pin and software compatible with 625, 626 and 450".  A few
 more details can be found about the older [Snapdragon 626](sda626.md).
+Wikichip has a [few more
+details](https://en.wikichip.org/wiki/qualcomm/snapdragon_600/632)
 
 Alongside a Samsung multi chip package (MCP) lovingly named
 [KMRH60014A-B614](https://www.samsung.com/semiconductor/mcp/KMRH60014A-B614/),
@@ -18,6 +20,31 @@ providing 4 GiB of LP3DDR volatile memory combined with 64 GiB NAND
 with an eMMC 5.1 interface.
 
 ![Top portion of the main board PCB of a Fairphone 3](/images/fp3_main_pcb_top.jpg)
+
+## Test Points And Pinout
+
+![Labeled Test Points](/images/test_point_labels.png)
+
+| label |  connected to 	| bat plugged 	| power on     	|  comment                                     	|
+| ----- | ---------------	| ------------	| -------------	| ---------------------------------------------	|
+| A   	|     BAT 4     	|      0V     	|      0V      	| GND                                          	|
+| B   	|     BAT 4     	|      0V     	|      0V      	| GND                                          	|
+| C   	|               	|             	|              	|                                              	|
+| D  	|               	|             	|              	|                                              	|
+| E  	|               	|             	|              	|                                              	|
+| F   	|     BTN 4     	|             	|              	| power button                                 	|
+| G  	|     BAT 1     	|     4.2V    	|              	|                                              	|
+| H  	|     BAT 1     	|     4.2V    	|              	|                                              	|
+| I   	|               	|      0V     	| 1.32 - 1.36V 	| (takes a few seconds to rise after power on) 	|
+| K   	|               	|      0V     	|      0V      	|                                              	|
+| L   	|               	|      0V     	|     1.78V    	|                                              	|
+| N  	|               	|             	|              	|                                              	|
+| O   	|               	|             	|              	|                                              	|
+| P   	|               	|             	|              	|                                              	|
+| Q   	|               	|             	|              	|                                              	|
+| R   	|               	|      0V     	|              	|                                              	|
+| S   	|               	|      0V     	|      0V      	|                                              	|
+| T   	|               	|      0V     	|     1.78V    	|                                              	|
 
 ## Similar devices
 
