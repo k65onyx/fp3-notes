@@ -23,28 +23,46 @@ with an eMMC 5.1 interface.
 
 ## Test Points And Pinout
 
-![Labeled Test Points](/images/test_point_labels.png)
+The following are measures and probes done against an unpowered,
+turned off but battery plugged, or a powered device.  Running without
+any display or other peripherals.
 
-| label |  connected to 	| bat plugged 	| power on     	|  comment                                     	|
-| ----- | ---------------	| ------------	| -------------	| ---------------------------------------------	|
-| A   	|     BAT 4     	|      0V     	|      0V      	| GND                                          	|
-| B   	|     BAT 4     	|      0V     	|      0V      	| GND                                          	|
-| C   	|               	|             	|              	|                                              	|
-| D  	|               	|             	|              	|                                              	|
-| E  	|               	|             	|              	|                                              	|
-| F   	|     BTN 4     	|             	|              	| power button                                 	|
-| G  	|     BAT 1     	|     4.2V    	|              	|                                              	|
-| H  	|     BAT 1     	|     4.2V    	|              	|                                              	|
-| I   	|               	|      0V     	| 1.32 - 1.36V 	| (takes a few seconds to rise after power on) 	|
-| K   	|               	|      0V     	|      0V      	|                                              	|
-| L   	|               	|      0V     	|     1.78V    	|                                              	|
-| N  	|               	|             	|              	|                                              	|
-| O   	|               	|             	|              	|                                              	|
-| P   	|               	|             	|              	|                                              	|
-| Q   	|               	|             	|              	|                                              	|
-| R   	|               	|      0V     	|              	|                                              	|
-| S   	|               	|      0V     	|      0V      	|                                              	|
-| T   	|               	|      0V     	|     1.78V    	|                                              	|
+The labels are arbitrarily assigned, just as a reference.  Measures
+and reasoning or net assignment are educated guesses, at the very
+best.  Do not rely on any of this data.
+
+![Labeled Test Points Top](/images/test_point_labels.png)
+
+| label | connected to | bat plugged | power on     | comment                                       |
+| ----- | ------------ | ----------- | ------------ | --------------------------------------------- |
+| A     | BAT 4        | 0V          | 0V           | GND                                           |
+| B     | BAT 4        | 0V          | 0V           | GND                                           |
+| C     |              |             |              |                                               |
+| D     |              |             |              |                                               |
+| E     |              |             |              |                                               |
+| F     | BTN 4        | 0V          | 0V           | power button                                  |
+| G     | BAT 1        | 4.2V        | 4.2V         |                                               |
+| H     | BAT 1        | 4.2V        | 4.2V         |                                               |
+| I     |              | 0V          | 1.32 - 1.36V | (takes a few seconds to rise after power on)  |
+| K     |              | 0V          | 0V           |                                               |
+| L     |              | 0V          | 1.78V        |                                               |
+| N     | FP 4         | 0V          |              |                                               |
+| O     | FP 9         | 0V          |              |                                               |
+| P     | FP 3         | 0V          |              |                                               |
+| Q     | FP 2         | 0V          |              |                                               |
+| BTN 1 |              | 0V          | 0V           | volume down button                            |
+| BTN 2 |              | 0V          | 0V           | volume up button                              |
+| BTN 3 |              | 1.78V       | 1.78V        |                                               |
+
+![Labeled Test Points Left Side](/images/test_point_labels2.png)
+
+| label | connected to | bat plugged | power on     | comment                                       |
+| ----- | ------------ | ----------- | ------------ | --------------------------------------------- |
+| R     |              | 0V          | 0V           | GND                                           |
+| S     |              | 0V          | 0V           |                                               |
+| T     |              | 0V          | 1.78V        |                                               |
+| W     |              | 0V          | 0V           | GND                                           |
+
 
 ## Similar devices
 
