@@ -44,8 +44,8 @@ best.  Do not rely on any of this data.
 | G     | BAT 1        | 4.2V        | 4.2V         |                                               |
 | H     | BAT 1        | 4.2V        | 4.2V         |                                               |
 | I     |              | 0V          | 1.32 - 1.36V | (takes a few seconds to rise after power on)  |
-| K     |              | 0V          | 0V           |                                               |
-| L     |              | 0V          | 1.78V        |                                               |
+| K     |              | 0V          | 0V           | EDL                                           |
+| L     |              | 0V          | 1.78V        | EDL                                           |
 | N     | FP 4         | 0V          |              |                                               |
 | O     | FP 9         | 0V          |              |                                               |
 | P     | FP 3         | 0V          |              |                                               |
@@ -59,8 +59,8 @@ best.  Do not rely on any of this data.
 | label | connected to | bat plugged | power on     | comment                                       |
 | ----- | ------------ | ----------- | ------------ | --------------------------------------------- |
 | R     |              | 0V          | 0V           | GND                                           |
-| S     |              | 0V          | 0V           |                                               |
-| T     |              | 0V          | 1.78V        |                                               |
+| S     |              | 0V          | 0V           | UART RX (?)                                   |
+| T     |              | 0V          | 1.78V        | UART TX                                       |
 | W     |              | 0V          | 0V           | GND                                           |
 
 
