@@ -36,7 +36,7 @@ best.  Do not rely on any of this data.
 | label | connected to | bat plugged | power on     | comment                                       |
 | ----- | ------------ | ----------- | ------------ | --------------------------------------------- |
 | A     | BAT 4        | 0V          | 0V           | GND                                           |
-| B     | BAT 4        | 0V          | 0V           | GND                                           |
+| B     | BAT 4        | 1.8V        | 0V           | GND                                           |
 | C     |              |             |              |                                               |
 | D     |              |             |              |                                               |
 | E     |              |             |              |                                               |
@@ -45,14 +45,21 @@ best.  Do not rely on any of this data.
 | H     | BAT 1        | 4.2V        | 4.2V         |                                               |
 | I     |              | 0V          | 1.32 - 1.36V | (takes a few seconds to rise after power on)  |
 | K     |              | 0V          | 0V           | EDL                                           |
-| L     |              | 0V          | 1.78V        | EDL                                           |
+| L     |              | 0V          | 1.8V         | EDL                                           |
 | N     | FP 4         | 0V          |              |                                               |
 | O     | FP 9         | 0V          |              |                                               |
 | P     | FP 3         | 0V          |              |                                               |
 | Q     | FP 2         | 0V          |              |                                               |
-| BTN 1 |              | 0V          | 0V           | volume down button                            |
-| BTN 2 |              | 0V          | 0V           | volume up button                              |
-| BTN 3 |              | 1.78V       | 1.78V        |                                               |
+| BTN 1 |              | 0V          | 0V           | volume up button                              |
+| BTN 2 |              | 0V          | 0V           | volume down button                            |
+| BTN 3 |              | 0V          | 0V           | GND                                           |
+| BTN 4 |              | 1.8V        | 1.8V         | power button                                  |
+
+Notes on buttons :
+
+* volume up button (on the case) shorts BTN 1 and BTN 3
+* volume up button (on the case) shorts BTN 2 and BTN 3
+* power button (on the case) shorts BTN 4 and BTN 3
 
 ![Labeled Test Points Left Side](/images/test_point_labels2.png)
 
@@ -60,7 +67,7 @@ best.  Do not rely on any of this data.
 | ----- | ------------ | ----------- | ------------ | --------------------------------------------- |
 | R     |              | 0V          | 0V           | GND                                           |
 | S     |              | 0V          | 0V           | UART RX (?)                                   |
-| T     |              | 0V          | 1.78V        | UART TX                                       |
+| T     |              | 0V          | 1.8V         | UART TX                                       |
 | W     |              | 0V          | 0V           | GND                                           |
 
 
